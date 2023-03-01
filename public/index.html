@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="try.js"></script>
+    <title>Task Controller</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-dark p-5 container container-md">
+      <div
+        class="container-fluid d-flex flex-column justify-content-center align-items-center"
+      >
+        <a class="navbar-brand fs-1 text-light mb-4 p-0" href="#"
+          >Task Controller</a
+        >
+        <form class="d-flex mx-auto task-form">
+          <input
+            style="margin-right: 10px"
+            class="form-control task-name"
+            type="search"
+            placeholder="Add new task"
+            aria-label="Search"
+          />
+          <button
+            style="width: 150px"
+            type="submit"
+            class="btn btn-success btn-add-task"
+          >
+            Add Task
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="container container-md container-sm bg-light p-3">
+      <div class="fs-1 p-0">
+        Tasks
+        <hr />
+      </div>
+      <ul class="list-group task-container p-0"></ul>
+      <div class="my-3 p-0">
+        <button type="button" class="btn btn-primary btn-clear">
+          Clear All Tasks
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
